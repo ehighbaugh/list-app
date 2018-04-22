@@ -29,4 +29,9 @@ export class ListComponent implements OnInit {
     });
   }
 
+  onAdd(listItem) {
+    this.listService.addItem(listItem.value);
+    listItem.value = null;
+  }
+
 }
