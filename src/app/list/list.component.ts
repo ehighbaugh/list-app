@@ -34,4 +34,8 @@ export class ListComponent implements OnInit {
     listItem.value = null;
   }
 
+  toggleCheck($key: string, isChecked) {
+    this.listService.checkOrUncheckItem($key, !isChecked);
+  }
+
 }
