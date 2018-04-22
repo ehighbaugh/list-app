@@ -38,4 +38,7 @@ export class ListComponent implements OnInit {
     this.listService.checkOrUncheckItem($key, !isChecked);
   }
 
+  deleteItem($key: string) {
+    this.listService.removeItem($key);
+  }
 }
